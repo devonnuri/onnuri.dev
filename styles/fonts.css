@@ -1,12 +1,4 @@
 @font-face {
-  font-family: 'Pier Sans';
-  src: url('../fonts/PierSans-Black.woff2') format('woff2'),
-    url('../fonts/PierSans-Black.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'Noto Sans Korean';
   font-style: normal;
   font-weight: 100;
