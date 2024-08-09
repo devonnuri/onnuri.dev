@@ -1,6 +1,18 @@
-import Image from "next/image";
+'use client';
+
+import { animated, useSpring } from "@react-spring/web";
 
 export default function Home() {
+  const hundredToZero = useSpring({
+    from: { y: 100 },
+    to: { y: 0 },
+  });
+
+  const minusHundredToZero = useSpring({
+    from: { y: -100 },
+    to: { y: 0 },
+  });
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <svg className="block w-[20rem] fill-black" viewBox="0 0 387.35 102.58">
@@ -42,23 +54,23 @@ export default function Home() {
             transform="translate(-49.08 -199.52)"
           />
         </g>
-        <g data-name="Eye 1" className="isolate translate-y-[100px]">
+        <animated.g style={{ isolation: 'isolate', ...hundredToZero }}>
           <path
             fillRule='evenodd'
             d="M204.84,247.2A2.76,2.76,0,1,0,207.6,250,2.77,2.77,0,0,0,204.84,247.2Z"
             transform="translate(-49.08 -199.52)"
           />
-        </g>
-        <g data-name="Eye 2" className="isolate translate-y-[100px]">
+        </animated.g>
+        <animated.g style={{ isolation: 'isolate', ...hundredToZero }}>
           <circle cx="169.68" cy="54.52" r="2.76" />
-        </g>
-        <g id="Brush" data-name="Brush" className='-translate-y-[100px]'>
+        </animated.g>
+        <animated.g style={{ isolation: 'isolate', ...minusHundredToZero }}>
           <path
             fillRule='evenodd'
             d="M424.84,218.91s-8-1.81.72-11.52,8.37-8.36,8.4-6.72-1.56,14.1-4.08,16.32A6.93,6.93,0,0,1,424.84,218.91Z"
             transform="translate(-49.08 -199.52)"
           />
-        </g>
+        </animated.g>
       </svg>
     </main>
   );
