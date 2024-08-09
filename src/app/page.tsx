@@ -18,14 +18,6 @@ export default function Home() {
             </a>
             {' | '}
             <a
-              href="https://blog.onnuri.dev"
-              className="underline"
-              target="_blank"
-            >
-              blog
-            </a>
-            {' | '}
-            <a
               href="https://github.com/devonnuri"
               className="underline"
               target="_blank"
