@@ -3,111 +3,63 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <svg className="block w-[20rem] fill-black" viewBox="0 0 387.35 102.58">
+        <g id="devonnuri">
+          <path
+            d="M86.56,232.82V209.67a4.61,4.61,0,0,1,9.21,0v41.75a23.29,23.29,0,1,1-9.21-18.6Zm0,18.6v-.09a14.19,14.19,0,1,0,0,.09Z"
+            transform="translate(-49.08 -199.52)"
+          />
+          <path
+            d="M147.85,251.61a4.59,4.59,0,0,1-4.65,4.56H111.11a14.19,14.19,0,0,0,13.4,9.58,18.25,18.25,0,0,0,10.41-3.07c2.14-1.4,5-.1,6.14,2.14s-.09,4.74-2.23,6.13a22.72,22.72,0,0,1-14.32,4,23.34,23.34,0,1,1,0-46.68C135.76,228.27,147.85,236.45,147.85,251.61ZM111.11,247H138c-2-6.51-7.9-9.49-13.48-9.49A14.24,14.24,0,0,0,111.11,247Z"
+            transform="translate(-49.08 -199.52)"
+          />
+          <path
+            d="M186.72,234.68l-13.95,37.2A4.79,4.79,0,0,1,168.4,275h-.09a4.73,4.73,0,0,1-4.37-3.07L150,234.68a4.62,4.62,0,1,1,8.64-3.25l9.77,25.95,9.67-25.95a4.62,4.62,0,0,1,8.65,3.25Z"
+            transform="translate(-49.08 -199.52)"
+          />
+          <path
+            d="M188.58,251.61A23.35,23.35,0,1,1,211.93,275,23.36,23.36,0,0,1,188.58,251.61Zm9.21,0a14.14,14.14,0,1,0,14.14-14.14A14.19,14.19,0,0,0,197.79,251.61Z"
+            transform="translate(-49.08 -199.52)"
+          />
+          <path
+            d="M287.44,251.61V270.3a4.61,4.61,0,1,1-9.21,0V251.61a14.14,14.14,0,1,0-28.27,0V270.3a4.61,4.61,0,1,1-9.21,0V251.61a23.35,23.35,0,0,1,46.69,0Z"
+            transform="translate(-49.08 -199.52)"
+          />
+          <path
+            d="M339.61,251.61V270.3a4.61,4.61,0,1,1-9.21,0V251.61a14.14,14.14,0,1,0-28.27,0V270.3a4.61,4.61,0,1,1-9.21,0V251.61a23.35,23.35,0,0,1,46.69,0Z"
+            transform="translate(-49.08 -199.52)"
+          />
+          <path
+            d="M382.57,232.92v23.43a18.83,18.83,0,0,1-37.66,0V232.92a4.61,4.61,0,0,1,9.21,0v23.25a9.63,9.63,0,1,0,19.25,0V232.92a4.6,4.6,0,0,1,9.2,0Z"
+            transform="translate(-49.08 -199.52)"
+          />
+          <path
+            d="M415.87,232.92a4.67,4.67,0,0,1-4.65,4.65,14.13,14.13,0,0,0-14.14,14.13v18.7a4.61,4.61,0,1,1-9.21,0V251.7a23.36,23.36,0,0,1,23.35-23.34A4.58,4.58,0,0,1,415.87,232.92Z"
+            transform="translate(-49.08 -199.52)"
+          />
+          <path
+            d="M421.44,270.4V232.92a4.61,4.61,0,0,1,9.21,0V270.4a4.61,4.61,0,1,1-9.21,0Z"
+            transform="translate(-49.08 -199.52)"
+          />
+        </g>
+        <g data-name="Eye 1" className="isolate translate-y-[100px]">
+          <path
+            fillRule='evenodd'
+            d="M204.84,247.2A2.76,2.76,0,1,0,207.6,250,2.77,2.77,0,0,0,204.84,247.2Z"
+            transform="translate(-49.08 -199.52)"
+          />
+        </g>
+        <g data-name="Eye 2" className="isolate translate-y-[100px]">
+          <circle cx="169.68" cy="54.52" r="2.76" />
+        </g>
+        <g id="Brush" data-name="Brush" className='-translate-y-[100px]'>
+          <path
+            fillRule='evenodd'
+            d="M424.84,218.91s-8-1.81.72-11.52,8.37-8.36,8.4-6.72-1.56,14.1-4.08,16.32A6.93,6.93,0,0,1,424.84,218.91Z"
+            transform="translate(-49.08 -199.52)"
+          />
+        </g>
+      </svg>
     </main>
   );
 }
