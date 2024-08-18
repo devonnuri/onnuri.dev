@@ -29,14 +29,20 @@ export default function Home() {
         <div className="mt-8">
           <h2 className="font-bold">Job Experience</h2>
           <ul className="text-sm">
-            <li className="flex">
-              <span>Aleph Research</span>
-              <span className="text-gray-500 ml-auto">2024.01-2024.08</span>
-            </li>
-            <li className="flex">
-              <span>Contents Technologies</span>
-              <span className="text-gray-500 ml-auto">2023.04-Present</span>
-            </li>
+            <li>Aleph Research</li>
+            <ul className="ml-4">
+              <li className="flex">
+                <span>Core Engineer (Part-time)</span>
+                <span className="text-gray-500 ml-auto">2024.01-2024.08</span>
+              </li>
+            </ul>
+            <li>Contents Technologies</li>
+            <ul className="ml-4">
+              <li className="flex">
+                <span>Frontend Engineer (Part-time)</span>
+                <span className="text-gray-500 ml-auto">2023.04-Present</span>
+              </li>
+            </ul>
           </ul>
         </div>
         <div className="mt-4">
