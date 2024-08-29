@@ -3,14 +3,22 @@
 import { animated, useSpring } from '@react-spring/web';
 
 export default function Logo() {
-  const hundredToZero = useSpring({
+  const leftEyeSpring = useSpring({
     from: { y: 100 },
     to: { y: 0 },
+    delay: 100,
   });
 
-  const minusHundredToZero = useSpring({
-    from: { y: -100 },
+  const rightEyeSpring = useSpring({
+    from: { y: 100 },
     to: { y: 0 },
+    delay: 300,
+  });
+
+  const brushSpring = useSpring({
+    from: { x: 50, y: -50 },
+    to: { x: 0, y: 0 },
+    delay: 100,
   });
 
   return (
@@ -54,17 +62,17 @@ export default function Logo() {
             transform="translate(-49.08 -199.52)"
           />
         </g>
-        <animated.g style={{ isolation: 'isolate', ...hundredToZero }}>
+        <animated.g style={{ isolation: 'isolate', ...leftEyeSpring }}>
           <path
             fillRule="evenodd"
             d="M204.84,247.2A2.76,2.76,0,1,0,207.6,250,2.77,2.77,0,0,0,204.84,247.2Z"
             transform="translate(-49.08 -199.52)"
           />
         </animated.g>
-        <animated.g style={{ isolation: 'isolate', ...hundredToZero }}>
+        <animated.g style={{ isolation: 'isolate', ...rightEyeSpring }}>
           <circle cx="169.68" cy="54.52" r="2.76" />
         </animated.g>
-        <animated.g style={{ isolation: 'isolate', ...minusHundredToZero }}>
+        <animated.g style={{ isolation: 'isolate', ...brushSpring }}>
           <path
             fillRule="evenodd"
             d="M424.84,218.91s-8-1.81.72-11.52,8.37-8.36,8.4-6.72-1.56,14.1-4.08,16.32A6.93,6.93,0,0,1,424.84,218.91Z"

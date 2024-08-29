@@ -1,68 +1,103 @@
 import Logo from '@/app/logo';
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50 p-4 flex items-center justify-center">
       <div className="bg-white p-8 max-w-xl w-full font-mono rounded border-2 border-gray-200">
         <div className="text-center">
-          <Logo />
-          <h1 className="mt-2 text-xl font-bold">Huiseong Yang</h1>
-          <h2 className="text-sm">Software Engineer</h2>
+          <div className="mb-2">
+            <Logo />
+          </div>
+          <h1 className="my-1 text-xl font-bold">Huiseong Yang</h1>
+          <h2 className="my-1 text-sm">Software Engineer</h2>
           <p className="text-sm text-gray-500">
-            <a
+            <Link
               href="https://wiki.onnuri.dev"
               className="underline"
               target="_blank"
             >
               wiki
-            </a>
+            </Link>
             {' | '}
-            <a
+            <Link
               href="https://github.com/devonnuri"
               className="underline"
               target="_blank"
             >
               github
-            </a>
+            </Link>
           </p>
         </div>
         <div className="mt-8">
-          <h2 className="font-bold">Job Experience</h2>
+          <h2 className="font-bold mb-1">Job Experience</h2>
           <ul className="text-sm">
-            <li>Aleph Research</li>
-            <ul className="ml-4">
-              <li className="flex">
+            <li>
+              <Link
+                href="https://alephresear.ch/"
+                className="underline decoration-dotted underline-offset-2"
+                target="_blank"
+              >
+                Aleph Research
+              </Link>
+            </li>
+            <ul className="ml-4 my-1">
+              <li className="flex flex-col-reverse sm:flex-row">
                 <span>Core Engineer (Part-time)</span>
-                <span className="text-gray-500 ml-auto">2024.01-2024.08</span>
+                <span className="text-gray-500 ml-0 sm:ml-auto">
+                  2024.01-2024.08
+                </span>
               </li>
             </ul>
-            <li>Contents Technologies</li>
-            <ul className="ml-4">
-              <li className="flex">
+            <li>
+              <Link
+                href="https://contentstech.com/"
+                className="underline decoration-dotted underline-offset-2"
+                target="_blank"
+              >
+                Contents Technologies
+              </Link>
+            </li>
+            <ul className="ml-4 my-1">
+              <li className="flex flex-col-reverse sm:flex-row">
                 <span>Frontend Engineer (Part-time)</span>
-                <span className="text-gray-500 ml-auto">2023.04-Present</span>
+                <span className="text-gray-500 ml-0 sm:ml-auto">
+                  2023.04-Present
+                </span>
               </li>
             </ul>
           </ul>
         </div>
         <div className="mt-4">
-          <h2 className="font-bold">Education</h2>
+          <h2 className="font-bold mb-1">Education</h2>
           <ul className="text-sm">
-            <li>Korea University</li>
+            <li className="my-1">
+              <Link
+                href="https://korea.ac.kr/"
+                className="underline decoration-dotted underline-offset-2"
+                target="_blank"
+              >
+                Korea University
+              </Link>
+            </li>
             <ul className="ml-4">
-              <li className="flex">
+              <li className="flex flex-col-reverse sm:flex-row my-1">
                 <span>B.A. of French Language and Literature</span>
-                <span className="text-gray-500 ml-auto">2023.03-Present</span>
+                <span className="text-gray-500 ml-0 sm:ml-auto">
+                  2023.03-Present
+                </span>
               </li>
-              <li className="flex">
+              <li className="flex flex-col-reverse sm:flex-row my-1">
                 <span>B.S. of Computer Science and Engineering</span>
-                <span className="text-gray-500 ml-auto">2024.09-Present</span>
+                <span className="text-gray-500 ml-0 sm:ml-auto">
+                  2024.09-Present
+                </span>
               </li>
             </ul>
           </ul>
         </div>
         <div className="mt-4">
-          <h2 className="font-bold">Contact</h2>
+          <h2 className="font-bold mb-1">Contact</h2>
           <p className="text-sm">me (at) onnuri.dev</p>
         </div>
       </div>
