@@ -10,7 +10,7 @@ export const GoogleAdSense = () => {
       async
       src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8586447565995800`}
       crossOrigin="anonymous"
-      strategy="lazyOnload"
+      strategy="beforeInteractive"
     />
   );
 };
