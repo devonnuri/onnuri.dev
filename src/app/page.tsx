@@ -73,7 +73,7 @@ export default function Home() {
           <ul className="text-sm">
             <li className="my-1">
               <Link
-                href="https://korea.ac.kr/"
+                href="https://www.korea.ac.kr/"
                 className="underline decoration-dotted underline-offset-2"
                 target="_blank"
               >
