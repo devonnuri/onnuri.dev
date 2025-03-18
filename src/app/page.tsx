@@ -1,7 +1,11 @@
 import Logo from '@/app/logo';
 import Link from 'next/link';
+import { redirect } from 'next/navigation';
 
 export default function Home() {
+  // TODO: remove this
+  redirect('https://wiki.onnuri.dev');
+
   return (
     <div className="min-h-screen bg-gray-50 p-4 flex items-center justify-center">
       <div className="bg-white p-8 max-w-xl w-full font-mono rounded border-2 border-gray-200">
