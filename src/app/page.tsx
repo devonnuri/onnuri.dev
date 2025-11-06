@@ -1,11 +1,8 @@
 import Logo from '@/app/logo';
 import Link from 'next/link';
-import { redirect } from 'next/navigation';
+import ProgressBar from '@/app/components/ProgressBar';
 
 export default function Home() {
-  // TODO: remove this
-  redirect('https://wiki.onnuri.dev/ko/');
-
   return (
     <div className="min-h-screen bg-gray-50 p-4 flex items-center justify-center">
       <div className="bg-white p-8 max-w-xl w-full font-mono rounded border-2 border-gray-200">
@@ -66,8 +63,20 @@ export default function Home() {
               <li className="flex flex-col-reverse sm:flex-row">
                 <span>Frontend Engineer (Part-time)</span>
                 <span className="text-gray-500 ml-0 sm:ml-auto">
-                  2023.04-Present
+                  2023.04-2024.10
                 </span>
+              </li>
+            </ul>
+            <li className="my-1">Republic of Korea Air Force Band</li>
+            <ul className="ml-4 my-1">
+              <li className="flex flex-col-reverse sm:flex-row">
+                <span>Military Musician (Saxophonist)</span>
+                <div className="text-gray-500 ml-0 sm:ml-auto sm:text-right">
+                  <div>2025.05-2027.02</div>
+                  <div className="hidden sm:block">
+                    <ProgressBar start="2025.05.19" end="2027.02.18" />
+                  </div>
+                </div>
               </li>
             </ul>
           </ul>
