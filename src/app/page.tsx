@@ -110,6 +110,50 @@ export default function Home() {
           </ul>
         </div>
         <div className="mt-4">
+          <h2 className="font-bold mb-1">Projects</h2>
+          <ul className="text-sm">
+            <li className="my-1">
+              <Link
+                href="https://github.com/devonnuri/visalloc"
+                className="underline decoration-dotted underline-offset-2"
+                target="_blank"
+              >
+                visalloc
+              </Link>
+              <div className="text-sm text-gray-500 ml-4">
+                Interactive, in-browser visualizer for a ptmalloc-like allocator
+                — implemented with TypeScript + React. Intended as a learning
+                tool for allocator internals.
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div className="mt-4">
+          <h2 className="font-bold mb-1">Links</h2>
+          <ul className="text-sm">
+            <li className="flex items-center justify-between my-1">
+              <span>solved.ac</span>
+              <Link
+                href="https://solved.ac/profile/devonnuri"
+                target="_blank"
+                className="text-[#00c78b] underline decoration-dotted underline-offset-2"
+              >
+                devonnuri (1711, Platinum IV)
+              </Link>
+            </li>
+            <li className="flex items-center justify-between my-1">
+              <span>Dreamhack</span>
+              <Link
+                href="https://dreamhack.io/users/2113"
+                target="_blank"
+                className="underline decoration-dotted underline-offset-2"
+              >
+                devonnuri
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="mt-4">
           <h2 className="font-bold mb-1">Contact</h2>
           <p className="text-sm">me (at) onnuri.dev</p>
         </div>
